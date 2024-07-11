@@ -1,0 +1,11 @@
+/* styles.css */
+.btn-custom-update {
+    background-color: purple;
+    color: white; /* Ensure the text color contrasts well with the background */
+    border: none; /* Remove the default border */
+  }
+  
+  .btn-custom-update:hover {
+    background-color: darkpurple; /* Optional: Add a hover effect */
+  }
+  

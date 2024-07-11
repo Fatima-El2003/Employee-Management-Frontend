@@ -1,0 +1,21 @@
+<div class="container mt-4">
+  <header class="page-header">
+    <h1>Employee Management System</h1>
+  </header>
+  
+  <a class="btn btn-success mt-4 mb-4" routerLink="/employee-form">New Employee</a>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let employee of employees">
+      <div class="card mb-4">
+        <div class="card-body">
+          <img *ngIf="employee.imageUrl" [src]="getEmployeeImageUrl(employee.imageUrl)" class="card-img-top" alt="{{employee.name}}" />
+          <h5 class="card-title">{{employee.name}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{employee.email}}</h6>
+          <h6 class="card-subtitle mb-2 text-muted">{{employee.phone}}</h6>
+          <button class="btn btn-custom-update" (click)="editEmployee(employee)" style="margin-right: 10px;">Update</button>
+          <button class="btn btn-danger" (click)="deleteEmployee(employee.id)">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
