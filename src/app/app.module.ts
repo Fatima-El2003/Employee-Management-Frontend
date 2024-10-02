@@ -10,6 +10,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 //import { JwtInterceptor } from './interceptor/jwt.interceptor';
+//comment
 @NgModule({
   declarations: [
     AppComponent,
